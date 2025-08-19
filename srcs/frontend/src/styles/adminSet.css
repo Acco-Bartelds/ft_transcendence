@@ -1,0 +1,84 @@
+/* setting.css */
+
+/* Admin Popup Overlay */
+.admin-popup-overlay {
+	@apply fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-[9999];
+}
+
+/* Close Popup Button */
+.close-popup {
+	@apply absolute top-2.5 right-3.5 rounded text-white bg-black text-2xl cursor-pointer;
+}
+
+/* Middle */
+.asmiddle {
+	@apply flex items-center justify-center min-h-screen;
+}
+
+/* Container for forms */
+.ucontainer {
+	@apply p-10 rounded-xl w-[490px] fixed border-4 border-[#902063] z-10 bg-black;
+}
+
+/* Title styling */
+.admin_header {
+	@apply text-4xl mb-4 font-sans text-white text-center;
+}
+
+/* Paragraph styling */
+.p2 {
+	@apply text-lg mb-1 mt-1 font-sans text-white text-center;
+}
+.p1 {
+	@apply text-base mb-0.5 mt-5 font-sans text-white text-left;
+}
+
+/* Input fields */
+.input-field {
+	@apply w-full py-2 pl-1 rounded bg-white text-black text-base focus:outline-none focus:border-2 focus:border-[#fde7f4];
+}
+.input-field.display-only {
+	@apply py-3 rounded bg-gray-400 text-black w-full inline-block;
+}
+
+/* Button styling */
+.ubuttons {
+	@apply flex gap-2 justify-center;
+}
+.ubtn {
+	@apply w-full py-3 text-lg text-white bg-[#902063] rounded cursor-pointer mt-2 transition duration-300 font-sans;
+}
+.ubtn:hover {
+	@apply bg-[#b86a8a];
+}
+
+/* User Picture */
+.user-picture, .upicture {
+	@apply flex justify-center items-center bg-none border-none mt-3 mb-3 ml-[153px];
+}
+.user-picture img, .upicture img {
+	@apply w-[100px] h-[100px] rounded-full object-cover border-2 border-white;
+}
+.user-picture img:hover {
+	@apply border-[#b86a8a];
+}
+
+/* Field Icon for password */
+.field-icon {
+	@apply cursor-pointer absolute ml-[-35px] mt-2.5;
+}
+.field-icon img {
+	@apply w-[25px] h-[20px];
+}
+
+/* Error Messages */
+.input-error {
+	@apply border-4 border-red-600;
+}
+.error-text {
+	@apply text-red-600 text-base mb-0.5 mt-5 font-sans text-left;
+}
+.error-message {
+	@apply text-[#ff2828] mt-2.5 mb-5 text-lg font-sans text-center;
+}
+

@@ -1,0 +1,87 @@
+/* setting.css */
+
+/* Container for forms */
+.scontainer {
+    @apply flex flex-col py-8 text-center bg-[rgba(0,0,0,0.8)] rounded-[15px] p-[65px];
+    margin-left: 220px;
+    margin-top: 120px;
+}
+
+/* All for the Middle */
+/* .smiddle {
+	@apply absolute top-[610px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] w-[550px] h-[75%] p-5 rounded-[15px] bg-[rgba(0,0,0,0.8)];
+} */
+.box {
+	@apply pl-[40px] pr-[35px] pb-[20px] ml-[-45px] mt-4 mb-4 w-[120%] rounded-[15px] border-[2px] border-[#902063] flex flex-col items-center justify-center;
+}
+
+/* Title styling */
+.header {
+	@apply w-full text-[2.5rem] mb-4 m-0 box-border font-sans text-white text-center;
+}
+
+/* Paragraph styling */
+p {
+	@apply  w-full text-base my-1 ml-8 box-border font-sans text-white text-center;
+}
+.p1 {
+	@apply  w-full text-base mb-0.5 mt-4 box-border font-sans text-white text-left;
+}
+
+/* Input fields */
+.input-field {
+	@apply w-full py-[8px] pl-1 rounded-[5px] border-none text-black bg-white text-[1rem] box-border;
+}
+
+/* Button styling */
+.buttons {
+	@apply flex gap-2 justify-center;
+}
+.btn {
+	@apply mb-2.5 w-[400px] py-3 text-[1.1rem] text-white bg-[#902063] border-none rounded-[5px] cursor-pointer mt-2.5 transition duration-300 box-border font-sans;
+}
+.btn:hover {
+	@apply bg-[#b86a8a];
+}
+
+/* Edit picture */
+.edit-picture {
+	@apply flex bg-none border-none cursor-pointer ml-[150px];
+}
+.edit-picture img {
+	@apply w-[110px] h-[110px] rounded-full object-cover border-[3px] border-white;
+}
+.edit-picture img:hover {
+	@apply border-[#b86a8a];
+}
+
+/* Eye icon for password */
+.field-icon {
+	@apply relative cursor-pointer top-[-15px] right-[-365px];
+}
+.field-icon img {
+	@apply w-[25px] h-[20px];
+}
+.field-iconn {
+	@apply relative cursor-pointer top-[-15px] right-[-43%];
+}
+.field-iconn img {
+	@apply w-[25px] h-[20px];
+}
+.field-iconnn {
+	@apply relative cursor-pointer top-[-15px] right-[-43%];
+}
+.field-iconnn img {
+	@apply w-[25px] h-[20px];
+}
+
+/* Error Messages */
+.input-error {
+	@apply border-[3px] border-red-500;
+}
+.error-text {
+	@apply text-red-500 text-base my-0.5 mt-5 box-border font-sans text-left;
+}
+.error-message {
+	@apply text-red-600 mt-2.5 mb-5 text-[18px] font-sans text-center;
+}

@@ -1,0 +1,110 @@
+/* userMain.css */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Dark overlay -> for background */
+.overlay {
+	@apply fixed inset-0 bg-black/50 z-[-1];
+}
+
+/* Top Bar */
+.topBar {
+	@apply fixed w-full h-[120px] flex items-center px-7 bg-[#902063] top-0 left-0 z-30;
+}
+.topBarFrame {
+	@apply absolute flex items-center h-[90px] right-[90px] top-1/2 transform -translate-y-1/2 bg-[#902063];
+}
+.aliasName {
+	@apply text-white text-[20px] font-sans whitespace-nowrap mr-[150px];
+}
+
+/* Profile Picture */
+.profile-picture {
+	@apply cursor-pointer rounded-full justify-center ml-[-120px];
+}
+.profile-picture img {
+	@apply w-24 h-24 rounded-full justify-center items-center object-cover border-2 border-white;
+}
+
+/* Setting icon */
+.settingIcon {
+	@apply bg-[#902063] w-[50px] h-[35px] ml-[50px] top-[50%] z-10;
+}
+.settingIcon:hover {
+	@apply bg-[#b86a8a];
+}
+
+/* Dropdown */
+.dropdown {
+	@apply relative text-center;
+}
+.dropdown-btn {
+	@apply bg-none border-none p-0 cursor-pointer flex items-center justify-center w-full;
+}
+.dropdown-content {
+	@apply hidden fixed top-[120px] left-0 w-[220px] h-full bg-[#902063] rounded-md;
+}
+.dropdown-content.show {
+	@apply block;
+}
+.dropdown-item {
+	@apply p-2 cursor-pointer text-white text-center text-[20px] font-sans;
+}
+.dropdown-item:hover {
+	@apply bg-[#b86a8a];
+}
+.dropdown-item.currentPage {
+	@apply font-bold bg-[#ab2d78] relative;
+}
+.dropdown-item.currentPage:hover {
+	@apply bg-[#b86a8a];
+}
+.dropdown-item.currentPage::after {
+	content: '▶';
+	@apply text-white text-[15px] absolute left-4 top-1/2 -translate-y-1/2;
+}
+
+/* Language */
+.language-btn {
+	@apply bg-[#902063] w-[220px] h-[50px] p-2 cursor-pointer text-white text-center text-[20px] font-sans border-none rounded-none;
+}
+.language-btn:hover {
+	@apply bg-[#b86a8a];
+}
+.language-content {
+	@apply hidden absolute bg-white border border-gray-300 rounded-md min-w-[100px] z-10 left-[45px];
+}
+.language-content.showLang {
+	@apply block;
+}
+.language-content div {
+	@apply p-2 flex items-center text-[17px] gap-2 text-black cursor-pointer;
+}
+.language-content div:hover {
+	@apply bg-[#beb0b6];
+}
+.language-content img {
+	@apply w-[20px] h-[15px];
+}
+.language-option {
+	@apply p-2 cursor-pointer text-white text-center text-[20px] font-sans;
+}
+.language-btn img {
+	@apply w-[25px] h-[15px] ml-40 mt-[-20px];
+}
+
+/* Notification Area */
+.notification-area {
+	@apply flex flex-col gap-1 mr-4;
+}
+.notification-field {
+	@apply rounded px-2 py-1 min-h-[20px] flex items-center;
+}
+.notification-alias {
+	@apply text-white text-sm font-medium max-w-[100px] truncate;
+}
+.notification-message {
+	@apply text-white text-xs max-w-[200px] truncate;
+}

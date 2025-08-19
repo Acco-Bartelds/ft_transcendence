@@ -1,0 +1,23 @@
+# the .vscode
+.vscode
+
+# ignore .env in any dir
+**/.env
+**/certs
+
+# installed dependencies etc
+**/.pnpm-store
+**/node_modules
+**/pnpm-lock.yaml
+
+#locally installed packages
+**/package-lock.json
+./package.json
+./node_modules
+
+# database
+**/drizzle/*
+**/data/*
+
+# local scripts
+installnode.sh
